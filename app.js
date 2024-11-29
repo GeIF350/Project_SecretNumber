@@ -3,7 +3,7 @@ let nome = prompt("Primeiro, como devo te chamar?");
 let limite = prompt("Devo sortear um número entre 0 e quanto?")
 let numero;
 let numeroSorteado = parseInt(Math.random()*limite);
-console.log(numeroSorteado);
+// console.log(numeroSorteado);
 
 alert(`O número está entre 0 e ${limite}`);
 
@@ -12,10 +12,10 @@ while(numero != numeroSorteado){
     numero = prompt("Digite uma tentativa: ");
     if(numero == numeroSorteado) {
         if(tentativas==1){
-            alert(`Parabéns! Você acertou o número ${numeroSorteado} com ${tentativas} tentativa.`)
+            alert(`Parabéns, ${nome}! Você acertou o número ${numeroSorteado} com ${tentativas} tentativa.`)
             break;
         } else {
-            alert(`Parabéns! Você acertou o número ${numeroSorteado} com ${tentativas} tentativas.`)
+            alert(`Parabéns, ${nome}! Você acertou o número ${numeroSorteado} com ${tentativas} tentativas.`)
             break;
         }
     } else {
