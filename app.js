@@ -10,14 +10,10 @@ alert(`O número está entre 0 e ${limite}`);
 while(numero != numeroSorteado){
     tentativas++
     numero = prompt("Digite uma tentativa: ");
+    let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
     if(numero == numeroSorteado) {
-        if(tentativas==1){
-            alert(`Parabéns, ${nome}! Você acertou o número ${numeroSorteado} com ${tentativas} tentativa.`)
-            break;
-        } else {
-            alert(`Parabéns, ${nome}! Você acertou o número ${numeroSorteado} com ${tentativas} tentativas.`)
-            break;
-        }
+        alert(`Parabéns, ${nome}! Você acertou o número ${numeroSorteado} com ${tentativas} ${palavraTentativa}.`)
+        break;
     } else {
         if(numero < numeroSorteado){
             alert(`O número secreto é maior que ${numero}`)
